@@ -225,12 +225,23 @@ input {
   right: 0;
 }
 
+/* change background header */
+.scroll-header {
+  background-color: var(--body-color);
+  box-shadow: 0 0 4px hsla(var(--hue-color), 64%, 15%, 0.15);
+}
+
+.scroll-header .nav__logo,
+.scroll-header .nav__toggle {
+  color: var(--title-color);
+}
+
 /* Home */
 .home__img {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100;
+  width: 100%;
   height: 100vh;
   object-fit: cover;
   object-position: 83%;
