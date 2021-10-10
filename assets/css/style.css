@@ -270,20 +270,22 @@ input {
   row-gap: 3rem;
 }
 
-.home__data-subtitle,
+/* .home__data-subtitle,
 .home__data-title,
 .home__social-link,
 .home__info {
   color: var(--white-color);
-}
+} */
 
 .home__data-subtitle {
+  color: var(--title-color);
   display: block;
   font-weight: var(--font-semi-bold);
   margin-bottom: var(--mb-0-75);
 }
 
 .home__data-title {
+  color: var(--title-color);
   font-size: var(--biggest-font-size);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-2-5);
@@ -293,6 +295,7 @@ input {
   display: flex;
   flex-direction: column;
   row-gap: 1.5rem;
+  color: var(--white-color);
 }
 
 .home__social-link {
@@ -301,6 +304,7 @@ input {
 }
 
 .home__info {
+  color: var(--white-color);
   background-color: var(--primary-color);
   display: flex;
   padding: 1.5rem 1rem;

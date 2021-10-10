@@ -110,3 +110,43 @@ function scrollActive() {
   });
 }
 window.addEventListener("scroll", scrollActive);
+
+// Scroll Reveal
+
+const srollReveal = ScrollReveal({
+  distance: "60px",
+  duration: 2800,
+  // reset: true,
+});
+
+srollReveal.reveal(
+  `.home__data, .home__social-link, .home__info,
+         .discover__container,
+         .experience__data, .experience__overlay,
+         .place__card,
+         .sponsor__content,
+         .footer__data, .footer__rights`,
+  {
+    origin: "top",
+    interval: 100,
+  }
+);
+
+srollReveal.reveal(
+  `.about__data, 
+         .video__description,
+         .subscribe__description`,
+  {
+    origin: "left",
+  }
+);
+
+srollReveal.reveal(
+  `.about__img-overlay, 
+         .video__content,
+         .subscribe__form`,
+  {
+    origin: "right",
+    interval: 100,
+  }
+);
